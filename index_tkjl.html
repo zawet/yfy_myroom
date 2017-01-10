@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>退款记录</title>
+<!--框架css-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<!--附加css-->
+<link href="css/xsda.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+</head>
+<body class="qkybody h100 po_ab">
+
+
+
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main pb0 h100 ">
+    <div class="jl_li">
+    	<div class="jl_li_up ub ub-ac">
+            <div class="wd_50 dian3">2016-12-30 10:10:10</div>
+            <div class="wd_22 dian3">娃娃机</div>
+            <div class="wd_22">-10元</div>
+            <div class="ub-f1 t_r jl_iconbtn"><i class="appicon iskuai trn">&#xe60b;</i></div>
+        </div>
+        <div class="jl_li_down" style="display:block">
+            <div class="ub ub-ac down_li">
+                <div class="ub-f1">订单号：2016000000000001</div>
+                <div class="ub-f1 t_r">状态：成功</div>
+            </div>
+            <div class="ub ub-ac down_li">
+                <div class="ub-f1">商品：10元=10币</div>
+                <div class="ub-f1">微信支付</div>
+                <div class="t_r ub-f1">金额：10元</div>
+            </div>
+            <div class="down_li">收款商家：小龙乐园电玩城</div>
+            <div class="t_c mb8"><a class="btn dal">已退款</a></div>
+            <div class="ub ub-ac down_li line">
+                <div  class="ub-f1">设备名：娃娃机</div>
+                <div class="t_r ub-f1">机器码：123456789</div>
+            </div>
+        </div>
+    </div>
+    <div class="jl_li">
+    	<div class="jl_li_up ub ub-ac">
+            <div class="wd_50 dian3">2016-12-30 10:10:10</div>
+            <div class="wd_22 dian3">娃娃机</div>
+            <div class="wd_22">-10元</div>
+            <div class="ub-f1 t_r jl_iconbtn"><i class="appicon r180 iskuai trn">&#xe60b;</i></div>
+        </div>
+        <div class="jl_li_down">
+            <div class="ub ub-ac down_li">
+                <div class="ub-f1">订单号：2016000000000001</div>
+                <div class="ub-f1 t_r">状态：成功</div>
+            </div>
+            <div class="ub ub-ac down_li">
+                <div class="ub-f1">商品：10元=10币</div>
+                <div class="ub-f1">微信支付</div>
+                <div class="t_r ub-f1">金额：10元</div>
+            </div>
+            <div class="down_li">收款商家：小龙乐园电玩城</div>
+            <div class="t_c mb8"><a class="btn dal">已退款</a></div>
+            <div class="ub ub-ac down_li line">
+                <div  class="ub-f1">设备名：娃娃机</div>
+                <div class="t_r ub-f1">机器码：123456789</div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+<script>
+$(function(){
+$(".jl_iconbtn").on("click","i",function(){
+	$(this).toggleClass("r180");
+	$(this).parents(".jl_li").find(".jl_li_down").slideToggle(200);
+	//$(this).parents(".jl_li").siblings().find(".jl_li_down").slideUp(200);
+	//$(this).parents(".jl_li").siblings().find(".jl_iconbtn").removeClass("r180");
+});
+});
+
+</script>
+</body>
+</html>

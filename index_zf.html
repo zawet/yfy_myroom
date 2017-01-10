@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>易付云_支付成功</title>
+<!--框架css-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<!--附加css-->
+<link href="css/xsda.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+</head>
+<body class="qkybody h100 po_ab">
+
+<!--头部标准，一般固定-->
+<div class="qkyh5_header noshadow">
+    <div class="qkyh5_topbox ub ub-ac ba_ff co_z6 pa_lr16 br_b br_wx">
+       <div class="wd_30 mr10"><img src="images/YFYLOGO2.png" class="wd_100"></div>
+       <div class="ub-f1 fz_18   pa_tb12 fz_we">易付云.值得托付</div>
+    </div>
+</div>
+
+<!--中部标准，一般放列表-->
+
+<div class="qkyh5_main pb0 ">
+   <div class="pro_box pa_14 ba_ff br_b br_t br_wx mt10 t_c">
+   	<div class="mt10"><i class="appicon fz_80 co_wx">&#xe608;</i></div>
+	<div class=" pt10 pb20 fz_20 co_z6 fz_we">10元 支付成功</div>
+	<div class=" fz_14 co_z9 pb20">请在5秒后，留意机器启动信号</div>   
+   </div> 
+   <a class="pro_zfbut po_r agen" href="index.html">再次购买</a>
+   <a class="pro_zfbut po_r un">离开</a>
+   <div class="plu"><a href="tel:123456">遇到问题？联系客服></a></div>
+</div>
+
+<script>
+$(function(){
+	qkyh5_topa_header(0,1);	
+
+	
+});
+
+
+//自动变化以头部的距离，i为想离头部有多远，可以负数
+function qkyh5_topa_header(i,jq){
+	if(jq==1){
+	var titHeight = $('.qkyh5_header').height()+i;
+	}else{
+	var titHeight = $('.qkyh5_header').offset().height+i;}
+	//console.log(titHeight);
+	$(".qkyh5_main").css({"paddingTop":titHeight+"px"});
+}
+</script>
+</body>
+</html>

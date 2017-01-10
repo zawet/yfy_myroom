@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>充值</title>
+<!--框架css-->
+<link href="css/common_h5.css" rel="stylesheet" type="text/css"/><!--公共css-->
+<!--附加css-->
+<link href="css/xsda.css" rel="stylesheet" type="text/css"/>
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="bil/jquery-1.9.1.min.js"></script>
+</head>
+<body class="qkybody h100 po_ab">
+
+
+
+<!--中部标准，一般放列表-->
+<div class="qkyh5_main pb0 ">
+	
+    <div class="pro_zfbox ba_ff br_b br_t br_wx pb10">
+       <div class="pa_lr16 clear3 pa_tb14">
+           <div class="fl fz_16 lh co_z6 fz_we">请选择购买金额</div>
+           
+       </div>
+       <div class="pro_zfcho clear3">
+       <a>5元</a><a class="cur">10元</a><a>20元</a><a>50元</a><a>100元</a>
+       </div>
+       <input type="text" class="zf_input" placeholder="输入其他金额">
+   </div>
+   <a class="pro_zfbut po_r zf"><i class="appicon fz_we zf_icon">&#xe600;</i>充值</a>
+</div>
+
+
+
+<script>
+$(function(){
+	pro_zfcho();
+	$(".pro_zfbut.zf").click(function(){		
+		$(".zf_icon").addClass("open");
+		setTimeout(function(){
+			window.location.href="index_xfjl.html"; 
+			},2000);
+	});
+});
+function pro_zfcho(){
+	$(".pro_zfcho a").each(function(i) {
+		$(this).click(function(){
+			$(this).addClass("cur").siblings().removeClass("cur")
+		}); 
+    });
+}
+
+</script>
+</body>
+</html>
